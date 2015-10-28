@@ -19,4 +19,8 @@ $(document).ready(function() {
     });
 
     socket.on('message', addMessage);
+
+    socket.on('clientConnect', addMessage);
+
+    socket.on('clientDC', addMessage);
 });
